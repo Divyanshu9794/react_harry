@@ -3,6 +3,7 @@ import './App.css';
 import TextForm from './components/TextForm'
 import Navbar from './components/Navbar';
 import { useState } from 'react';
+import Alert from './components/Alert';
 // import About from './components/About';
 function App() {
   const [mode,setmode]= useState('light'); 
@@ -20,6 +21,7 @@ function App() {
     <>
    
 <Navbar title="TextUtils" mode={mode} togglemode={togglemode} />
+<Alert />
 <div className="container" my-3>
 
 <TextForm heading="Enter the text to analyse below" mode={mode}/>
