@@ -8,13 +8,15 @@ export default function TextForm(props) {
   };
   const handleupclick = () =>{
     let newtext = text.toUpperCase();
-
-    setText(newtext)
+    
+    setText(newtext);
+    props.showAlert("Coverted To uppercase! ","success")
   }
   const handleloclick = () =>{
     let newtext = text.toLowerCase();
 
-    setText(newtext)
+    setText(newtext);
+    props.showAlert("Coverted To lowercase! ","success")
   }
  
   return (
